@@ -5,5 +5,4 @@ metadata:
 data:
   test: "value"
   name: {{ .Values.name }}
-  {{- template "check-url" . }}
   url: {{ .Values.url | quote }}
